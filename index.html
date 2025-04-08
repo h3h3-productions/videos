@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Video Table</title>
+  <link rel="stylesheet" href="https://cdn.datatables.net/1.13.6/css/jquery.dataTables.min.css"/>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      padding: 20px;
+    }
+    table {
+      width: 100%;
+      table-layout: fixed;
+    }
+    td:first-child {
+      width: 100px;
+      word-wrap: break-word;
+      white-space: normal;
+      vertical-align: middle;
+      padding-left: 10px;
+    }
+    .video-container {
+      position: relative;
+      width: 100%;
+      padding-bottom: 56.25%;
+      height: 0;
+      overflow: hidden;
+    }
+    .video-container iframe {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      border: 0;
+    }
+    /* DataTables Styling Fixes */
+    table.dataTable {
+      border-collapse: collapse;
+    }
+    table.dataTable th,
+    table.dataTable td {
+      border: 1px solid #ddd;
+      padding: 8px;
+    }
+    table.dataTable th {
+      background-color: #f2f2f2;
+      text-align: left;
+    }
+    td button {
+      display: block;
+      margin: 0 auto;
+    }
+  </style>
+</head>
+<body>
+  <h1>R/H3H3_PRODUCTIONS VIDEO ARCHIVE</h1>
+  <table id="videoTable" class="display">
+    <thead>
+      <tr>
+        <th>Title</th>
+        <th>Embed</th>
+      </tr>
+    </thead>
+    <tbody>
+      
+      <tr>
+        <td>A Scroll Through How Many Times Hasan Is Mentioned On H3’s Reddit…</td>
+        <td>
+          <button onclick="loadEmbed(this, 'https://archive.org/embed/A_Scroll_Through_How_Many_Times_Hasan_Is_Mentioned_On_H3_s_Reddit_a4015299')">Load Video</button>
+        </td>
+      </tr>
+    
+      <tr>
+        <td>Catching up on the latest crashout like..</td>
+        <td>
+          <button onclick="loadEmbed(this, 'https://archive.org/embed/Catching_up_on_the_latest_crashout_like.._7238db40')">Load Video</button>
+        </td>
+      </tr>
+    
+      <tr>
+        <td>Ethan Kavanaugh is mad at multiple subs for their public opinion, says he's working on stuff behind the scenes, blames reddit, blames Hasan, lies, shares his conspiracies, and more..</td>
+        <td>
+          <button onclick="loadEmbed(this, 'https://archive.org/embed/Ethan_Kavanaugh_is_mad_at_multiple_subs_for_their_public_opinion_says_he_s_working_on_stuff_behind_c')">Load Video</button>
+        </td>
+      </tr>
+    
+      <tr>
+        <td>Ethan Kleinvanaugh rn:</td>
+        <td>
+          <button onclick="loadEmbed(this, 'https://archive.org/embed/Ethan_Kleinvanaugh_rn_93456ab8')">Load Video</button>
+        </td>
+      </tr>
+    
+      <tr>
+        <td>Ethan mentions me on the show. He's mad that I said Hila translates Israeli news to him.. And where did I get such information? From Ethan Klein himself...</td>
+        <td>
+          <button onclick="loadEmbed(this, 'https://archive.org/embed/Ethan_mentions_me_on_the_show._He_s_mad_that_I_said_Hila_translates_Israeli_news_to_him.._And_where_')">Load Video</button>
+        </td>
+      </tr>
+    
+      <tr>
+        <td>Ethan talks about how his child crawling around in dog shit has caused his children to contract giardia</td>
+        <td>
+          <button onclick="loadEmbed(this, 'https://archive.org/embed/Ethan_talks_about_how_his_child_crawling_around_in_dog_shit_has_caused_his_children_to_contract_giar')">Load Video</button>
+        </td>
+      </tr>
+    
+      <tr>
+        <td>Exhibit A in the lolsuit, h3 fans harassing a guest on the pod</td>
+        <td>
+          <button onclick="loadEmbed(this, 'https://archive.org/embed/Exhibit_A_in_the_lolsuit_h3_fans_harassing_a_guest_on_the_pod_9d99a9d1')">Load Video</button>
+        </td>
+      </tr>
+    
+      <tr>
+        <td>Exhibit B in the lolsuit, ethan harassing hasan for over a year</td>
+        <td>
+          <button onclick="loadEmbed(this, 'https://archive.org/embed/Exhibit_B_in_the_lolsuit_ethan_harassing_hasan_for_over_a_year_56ef5fc4')">Load Video</button>
+        </td>
+      </tr>
+    
+      <tr>
+        <td>Exhibit D in the lolsuit, Ethan knowingly spread untrue and defamatory statements about twitch after been spoon fed them by dan saltman</td>
+        <td>
+          <button onclick="loadEmbed(this, 'https://archive.org/embed/Exhibit_D_in_the_lolsuit_Ethan_knowingly_spread_untrue_and_defamatory_statements_about_twitch_after_')">Load Video</button>
+        </td>
+      </tr>
+    
+      <tr>
+        <td>For those who missed itbon Snark, here's Ethan telling Love he doesn't have ADHD after Love says he was diagnosed. Ethan is so sure te has ADHD but knows nothing about it.</td>
+        <td>
+          <button onclick="loadEmbed(this, 'https://archive.org/embed/For_those_who_missed_itbon_Snark_here_s_Ethan_telling_Love_he_doesn_t_have_ADHD_after_Love_says_he_0')">Load Video</button>
+        </td>
+      </tr>
+    
+      <tr>
+        <td>H3 Fans About to Come Full Circle</td>
+        <td>
+          <button onclick="loadEmbed(this, 'https://archive.org/embed/H3_Fans_About_to_Come_Full_Circle_1c0ceb34')">Load Video</button>
+        </td>
+      </tr>
+    
+      <tr>
+        <td>How Ethan Got Giardia from Olive – Disgusting Footage Uncovered!</td>
+        <td>
+          <button onclick="loadEmbed(this, 'https://archive.org/embed/How_Ethan_Got_Giardia_from_Olive_Disgusting_Footage_Uncovered_12fa53a9')">Load Video</button>
+        </td>
+      </tr>
+    
+      <tr>
+        <td>"I don't think I've seen anyone in the history of the internet harassed like this"</td>
+        <td>
+          <button onclick="loadEmbed(this, 'https://archive.org/embed/I_don_t_think_I_ve_seen_anyone_in_the_history_of_the_internet_harassed_like_this_aecbd18d')">Load Video</button>
+        </td>
+      </tr>
+    
+      <tr>
+        <td>In the near future ethan will have imprisoned all snarkers and collaborators and have sent them to his technofeudalistic reeducation gulags where he forces everyone to watch h3 until we are fans again.</td>
+        <td>
+          <button onclick="loadEmbed(this, 'https://archive.org/embed/In_the_near_future_ethan_will_have_imprisoned_all_snarkers_and_collaborators_and_have_sent_them_to_h')">Load Video</button>
+        </td>
+      </tr>
+    
+      <tr>
+        <td>It’s not goodbye, snark, it’s see you later</td>
+        <td>
+          <button onclick="loadEmbed(this, 'https://archive.org/embed/It_s_not_goodbye_snark_it_s_see_you_later_3c3425be')">Load Video</button>
+        </td>
+      </tr>
+    
+      <tr>
+        <td>Just found out I'm being sent to jail for digitally torturing a pro-genocide moron</td>
+        <td>
+          <button onclick="loadEmbed(this, 'https://archive.org/embed/Just_found_out_I_m_being_sent_to_jail_for_digitally_torturing_a_pro-genocide_moron_d1511670')">Load Video</button>
+        </td>
+      </tr>
+    
+      <tr>
+        <td>Mike from PA prefers “jolly” Ethan</td>
+        <td>
+          <button onclick="loadEmbed(this, 'https://archive.org/embed/Mike_from_PA_prefers_jolly_Ethan_f3a9acde')">Load Video</button>
+        </td>
+      </tr>
+    
+      <tr>
+        <td>Old clip I randomly came across. While discussing Hasan fan channels, Ethan admits to using DMCA takedowns as a scare tactic (H3TV #92, Oct 2 2023)</td>
+        <td>
+          <button onclick="loadEmbed(this, 'https://archive.org/embed/Old_clip_I_randomly_came_across._While_discussing_Hasan_fan_channels_Ethan_admits_to_using_DMCA_tak_')">Load Video</button>
+        </td>
+      </tr>
+    
+      <tr>
+        <td>Out of context Hasan mention within seconds of intro</td>
+        <td>
+          <button onclick="loadEmbed(this, 'https://archive.org/embed/Out_of_context_Hasan_mention_within_seconds_of_intro_a6d90da1')">Load Video</button>
+        </td>
+      </tr>
+    
+      <tr>
+        <td>Snark on break - most likely due to section in todays ep. Link below. Also I fully believe Ethan snuck off with Ab to take Vyvanse. If Ab's psych sees this he'll never get another prescription, that was so dumb</td>
+        <td>
+          <button onclick="loadEmbed(this, 'https://archive.org/embed/Snark_on_break_-_most_likely_due_to_section_in_todays_ep._Link_below._Also_I_fully_believe_Ethan_snu')">Load Video</button>
+        </td>
+      </tr>
+    
+      <tr>
+        <td>The Amount Of Times Hasan Has Been Mentioned In The H3 Sub: An In-Real-Time Visual</td>
+        <td>
+          <button onclick="loadEmbed(this, 'https://archive.org/embed/The_Amount_Of_Times_Hasan_Has_Been_Mentioned_In_The_H3_Sub_An_In-Real-Time_Visual_e1759a21')">Load Video</button>
+        </td>
+      </tr>
+    
+      <tr>
+        <td>Watch out, guys! They're coming for us!</td>
+        <td>
+          <button onclick="loadEmbed(this, 'https://archive.org/embed/Watch_out_guys_They_re_coming_for_us_59fd82e6')">Load Video</button>
+        </td>
+      </tr>
+    
+      <tr>
+        <td>since they were being brought up for some reason</td>
+        <td>
+          <button onclick="loadEmbed(this, 'https://archive.org/embed/since_they_were_being_brought_up_for_some_reason_90d89208')">Load Video</button>
+        </td>
+      </tr>
+    
+    </tbody>
+  </table>
+
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+  <script src="https://cdn.datatables.net/1.13.6/js/jquery.dataTables.min.js"></script>
+  
+<script>
+  function loadEmbed(button, url) {
+    const container = document.createElement('div');
+    container.className = 'video-container';
+
+    const iframe = document.createElement('iframe');
+    iframe.src = url;
+    iframe.allowFullscreen = true;
+    iframe.loading = "lazy";
+
+    container.appendChild(iframe);
+    button.parentNode.replaceChild(container, button);
+  }
+
+  $(document).ready(function () {
+    const table = $('#videoTable').DataTable({
+      pageLength: 20,
+      info: true
+    });
+
+    table.on('draw', function () {
+      $('#videoTable tbody tr').each(function () {
+        const $td = $(this).find('td').eq(1);
+        if ($td.find('iframe').length) {
+          const url = $td.find('iframe').attr('src');
+          $td.html('<button onclick="loadEmbed(this, \'{0}\')">Load Video</button>'.replace('{0}', url));
+        }
+      });
+    });
+  });
+</script>
+
+</body>
+</html>
